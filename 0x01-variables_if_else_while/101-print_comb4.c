@@ -12,8 +12,8 @@
 int main(void)
 {
 	int firstD, secD, thirD;
-	{
-		for (firstD = 48; firstD < 58; firstD++)
+	
+	for (firstD = 48; firstD < 58; firstD++)
 		{
 			for (secD = 49; secD < 58; secD++)
 			{
@@ -33,7 +33,7 @@ int main(void)
 				}
 			}
 		}
-	}
+	
 	putchar('\n');
 	return (0);
 }
