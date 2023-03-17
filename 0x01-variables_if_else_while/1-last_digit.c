@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 /**
  * main - print a random string
  * then determines if the last digit is positive, negetive or 0
