@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 #include <time.h>
 /**
  * main - generate random number and print whether it is negetive or positive
