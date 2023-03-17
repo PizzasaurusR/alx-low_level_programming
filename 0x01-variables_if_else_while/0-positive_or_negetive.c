@@ -1,7 +1,8 @@
 #include <stdlib.h>
 #include <time.h>
-/*
- * main - generate random number and print if it is negetive or positive
+/**
+ * =main - generate random number and print whether it is negetive or positive
+ *
  * Return: Always 0 (Success)
  */
 
