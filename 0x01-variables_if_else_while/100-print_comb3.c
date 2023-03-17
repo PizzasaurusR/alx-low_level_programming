@@ -11,7 +11,7 @@ int main(void)
 {
 	int firstD, secD;
 
-	for (firstD = 48; n <= 56; firstD++)
+	for (firstD = 48; firstD <= 56; firstD++)
 	{
 		for (secD = 49; secD <= 57; secD++)
 		{
