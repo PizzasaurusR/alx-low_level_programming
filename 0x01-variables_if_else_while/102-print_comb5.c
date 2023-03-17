@@ -1,43 +1,33 @@
 #include <stdio.h>
 
 /**
- * main - print num pairs from 00-99 with no repeats
+ * main - prins all possible combinations of two two-digit numbers
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	int ten;
-	int one;
-	int ten2;
-	int one2;
+	int i, j;
 
-	for (ten = '0'; ten <= '9'; ten++)
+	for (i = 0; i < 100; i++)
 	{
-		for (one = '0'; one <= '9'; one++)
+		for (j = 0; j < 100; j++)
 		{
-		 	for (ten2 = ten; ten2 <= '9'; ten2++)
+			if (i < j)
 			{
-				for (one2 = one + 1; one2 <= '9'; one2++)
+				putchar((i / 10) + 48);
+				putchar((i % 10) + 48);
+				putchar(' ');
+				putchar((j / 10) + 48);
+				putchar((j % 10) + 48);
+				if (i != 98 || j != 99)
 				{
-					putchar(ten);
-					putchar(one);
+					putchar(',');
 					putchar(' ');
-					putchar(ten2);
-					putchar(one2);
-
-					if (!((ten == '9' && one == '8') &&
-					      (ten2 == '9' && one2 == '9')))
-					{
-						putchar(',');
-						putchar(' ');
-					}
 				}
-				one2 = '0';
 			}
+
 		}
 	}
 	putchar('\n');
-
 	return (0);
 }
