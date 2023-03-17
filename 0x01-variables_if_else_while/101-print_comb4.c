@@ -17,7 +17,7 @@ int main(void)
 		{
 			for (secD = 49; secD < 58; secD++)
 			{
-				for (thirD = 50; thirdD < 58; thirdD++)
+				for (thirD = 50; thirD < 58; thirD++)
 				{
 					if (thirD > secD && secD > firstD)
 					{
