@@ -9,7 +9,7 @@
 int main(void)
 {
 	unsigned long int sum3, sum5, sum;
-	int curentNum;
+	int currentNum;
 
 	sum3 = 0;
 	sum5 = 0;
