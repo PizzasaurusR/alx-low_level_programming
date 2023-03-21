@@ -9,20 +9,20 @@
 int main(void)
 {
 	unsigned long int sum3, sum5, sum;
-	int i;
+	int curentNum;
 
 	sum3 = 0;
 	sum5 = 0;
 	sum = 0;
 
-	for (i = 0; i < 1024; ++i)
+	for (currentNum = 0; currentNum < 1024; ++i)
 	{
-		if ((i % 3) == 0)
+		if ((currentNum % 3) == 0)
 		{
-			sum3 = sum3 + i;
-		} else if ((i % 5) == 0)
+			sum3 = sum3 + currentNum;
+		} else if ((currentNum % 5) == 0)
 		{
-			sum5 = sum5 + i;
+			sum5 = sum5 + currentNum;
 		}
 	}
 	sum = sum3 + sum5;
