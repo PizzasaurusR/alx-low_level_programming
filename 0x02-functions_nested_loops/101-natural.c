@@ -15,7 +15,7 @@ int main(void)
 	sum5 = 0;
 	sum = 0;
 
-	for (currentNum = 0; currentNum < 1024; ++i)
+	for (currentNum = 0; currentNum < 1024; ++currentNum)
 	{
 		if ((currentNum % 3) == 0)
 		{
