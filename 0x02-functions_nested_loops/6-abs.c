@@ -1,4 +1,4 @@
-#include "mian.h"
+#include "main.h"
 /**
  * _abs - computes absolute value of int
  * @n: n is an int
