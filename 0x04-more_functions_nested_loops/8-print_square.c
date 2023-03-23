@@ -4,7 +4,7 @@
  * print_square - prints sqaure of #'s
  * @size: size of square
  */
-oid print_square(int size)
+void print_square(int size)
 {
 	if (size <= 0)
 	{
