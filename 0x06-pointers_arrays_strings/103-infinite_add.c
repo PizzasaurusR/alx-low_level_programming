@@ -1,5 +1,16 @@
 #include "main.h"
 
+/**
+ * add_strings - add number stored in to str
+ * @n1: first number
+ * @n2: second number
+ * @r: buffer
+ * @r_index: current r index
+ *
+ * Return: if r can store sum - pointer to result
+ * if r cannot store 0
+ */
+
 char *add_strings(char *n1, char *n2, char *r, int r_index)
 {
 	int num, tens = 0;
