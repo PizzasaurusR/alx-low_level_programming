@@ -10,27 +10,29 @@
 
 Usigned int _strspn(char *s, char *accept)
 {
-	int x, i, b;
+	int x, i, y;
 
 	x = 0;
-	b = 0;
 
 	while (s[x] != '\0')
 	{
-		for (i = 0; accept[i]; i++)
+		i = 0;
+		y = 1;
+
+		while (accept[i] != '\0')
 		{
 			if (s[x] == accept[i])
 			{
-				b++;
+				y = 0;
 				break;
 			}
-
-			else if (accept[i++] == '\0')
-				return (b);
+			i++;
 		}
-
+		if (y == 1)
+		{
+			break;
+		}
 		x++;
 	}
-
-	return (b);
+	return (x);
 }
