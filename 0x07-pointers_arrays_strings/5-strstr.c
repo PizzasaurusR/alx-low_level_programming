@@ -10,7 +10,7 @@
  * NULL if not found
  */
 
-char *strstr(char *haystack, char *needle)
+char *_strstr(char *haystack, char *needle)
 {
 	int x, y;
 
