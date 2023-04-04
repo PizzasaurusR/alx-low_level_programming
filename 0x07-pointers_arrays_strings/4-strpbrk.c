@@ -1,11 +1,12 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * *_strpbrk - search str for new set on bytes
  * @s: str to check
  * @accept: str with new bytes to check
  *
- * Return: If match - pointer to match
+ * Return: if match - pointer to match
  * else - null
  */
 
