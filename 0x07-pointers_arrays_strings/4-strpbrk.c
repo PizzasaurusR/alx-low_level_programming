@@ -9,7 +9,7 @@
  * else - null
  */
 
-char *_strpbrk(cahr *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
 	int x;
 
