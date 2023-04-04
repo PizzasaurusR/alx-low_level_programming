@@ -8,7 +8,7 @@
  * Return: num bytes of s from accept
  */
 
-Usigned int _strspn(char *s, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
 	int x, i, y;
 
