@@ -29,7 +29,7 @@ Usigned int _strspn(char *s, char *accept)
 				return (b);
 		}
 
-		s++;
+		x++;
 	}
 
 	return (b);
