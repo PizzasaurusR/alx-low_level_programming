@@ -12,7 +12,7 @@ int nat_sqrt_recursion(int n, int posSqrt)
 {
 	if (posSqrt * posSqrt == n)
 	{
-		return(posSqrt);
+		return (posSqrt);
 	}
 	else if (posSqrt * posSqrt > n || posSqrt * posSqrt < n)
 	{
@@ -36,6 +36,6 @@ int _sqrt_recursion(int n)
 	}
 	else
 	{
-		return(nat_sqrt_recursion(n, 0));
+		return (nat_sqrt_recursion(n, 0));
 	}
 }
