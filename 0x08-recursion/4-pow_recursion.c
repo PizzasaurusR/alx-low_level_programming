@@ -1,7 +1,7 @@
 #include "main.h"
 
-/*
- * _pow_recursion - function to return x to power y
+/**
+ * _pow_recursion - function to return value x to power value y
  * @x: x int
  * @y: y int
  *
