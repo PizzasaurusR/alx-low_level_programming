@@ -3,7 +3,9 @@
 /**
  * is_prime - check if int is prime
  * @n: int
- * @checker: checker 
+ * @checker: checker
+ *
+ * Return: 1 if true, 0 if false
  */
 
 int is_prime(int n, int checker)
@@ -16,7 +18,7 @@ int is_prime(int n, int checker)
 	{
 		return (1);
 	}
-	return (is_prime(n, checker - 1));
+	return (is_prime(n, n - 1));
 }
 
 /**
