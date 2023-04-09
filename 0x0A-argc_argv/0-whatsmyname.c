@@ -9,7 +9,7 @@
  * Return: Always 0 (Success)
  */
 
-int mynameis(int __attribute__((unused)) argc, char *argv[])
+int mynameis(int argc  __attribute__((unused)), char *argv[])
 {
 	printf("%s\n", *argv);
 
