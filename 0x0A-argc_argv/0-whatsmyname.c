@@ -3,8 +3,8 @@
 
 /**
  * mynameis - print name of program
- * @argc - num arguments
- * @argv - argument arr
+ * @argc: num arguments
+ * @argv: argument arr
  *
  * Return: Always 0 (Success)
  */
