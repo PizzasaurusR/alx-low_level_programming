@@ -62,32 +62,33 @@ int main(int argc, char *argv[])
 	if (argc == 1)
 	{
 		printf("0\n");
+		return (0);
 	}
 	else
 	{
-	sum = 0;
+		sum = 0;
 
-	for (x = 1; x < argc; x++)
-	{
-		for (y = 0; argv[x][y] != '\0'; y++)
+		for (x = 1; x < argc; x++)
 		{
-			if (argv[x][y] > '9' || argv[x][y] < '0')
+			for (y = 0; argv[x][y] != '\0'; y++)
 			{
-				printf("Error\n");
+				if (argv[x][y] > '9' || argv[x][y] < '0')
+				{
+					printf("Error\n");
 
-				return (1);
+					return (1);
+				}
 			}
 		}
-	}
 
-	for (z = 1; z < argc; z++)
-	{
-		curNum = _atoi(argv[z]);
-		if (curNum >= 0)
+		for (z = 1; z < argc; z++)
 		{
-			sum += curNum;
+			curNum = _atoi(argv[z]);
+			if (curNum >= 0)
+			{
+				sum += curNum;
+			}
 		}
-	}
 	}
 	printf("%d\n", sum);
 	return (0);
