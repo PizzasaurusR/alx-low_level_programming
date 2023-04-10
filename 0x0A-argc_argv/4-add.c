@@ -51,7 +51,7 @@ int _atoi(char *s)
  * @argc: num arguments
  * @argv: argument arr
  *
- * Return: 0 if no number 
+ * Return: 0 if no number
  * 1 if error
  */
 
