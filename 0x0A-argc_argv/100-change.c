@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * main - print min num coins to 
+ * main - print min num coins to
  * give exact change
  * @argc: num arguments
  * @argv: argument arr
@@ -11,7 +11,7 @@
  * Return: 0 (Success), 1 (Error)
  */
 
-int main( int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int cents, numCoins,  change;
 	int coins[] = {25, 10, 5, 2, 1};
@@ -21,7 +21,7 @@ int main( int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	
+
 	cents = atoi(argv[1]);
 	change = 0;
 
