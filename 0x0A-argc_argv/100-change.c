@@ -21,26 +21,25 @@ int main( int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	else
+	
+	cents = atoi(argv[1]);
+
+	if (cents < 0)
 	{
-		cents = atoi(argv[1]);
-
-		if (cents < 0)
-		{
-			printf("0\n");
-			return (0);
-		}
-
-		for (numCoins = 0; numCoins < 5 && cents >= 0; numCoins++)
-		{
-			while (cents >= coins[numCoins])
-			{
-				change++;
-				cents -= coins[numCoins];
-			}
-		}
-
-		printf("%d\n", change);
+		printf("0\n");
 		return (0);
 	}
+
+	for (numCoins = 0; numCoins < 5 && cents >= 0; numCoins++)
+	{
+		while (cents >= coins[numCoins])
+		{
+			change++;
+			cents -= coins[numCoins];
+		}
+	}
+
+	printf("%d\n", change);
+
+	return (0);
 }
