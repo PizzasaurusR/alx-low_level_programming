@@ -20,12 +20,12 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	while (str[len] != 0)
+	while (str[len] != '\0')
 	{
 		len++;
 	}
 
-	cpystr = malloc((len - 1) * sizeof(char));
+	cpystr = malloc((len + 1) * sizeof(char));
 
 	if (cpystr == NULL)
 	{
