@@ -17,30 +17,24 @@ char *argstostr(int ac, char **av)
 	char *s;
 
 	if (ac == 0 || av == NULL)
-	{
 		return (NULL);
-	}
 
 	len = 0;
 
 	for (x = 0; x < ac; x++)
 	{
 		for (y = 0; av[x][y] != '\0'; y++)
-		{
 			len++;
-		}
 		len++;
 	}
 
 	s = malloc((len + 1) * sizeof(char));
-	
+
 	if (s == NULL)
-	{
 		return (NULL);
-	}
 
 	z = 0;
-	
+
 	for (x = 0; x < ac; x++)
 	{
 		for (y = 0; av[x][y] != '\0'; y++)
