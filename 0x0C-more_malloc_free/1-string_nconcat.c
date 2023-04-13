@@ -8,7 +8,7 @@
  * @s2: str to concat
  * @n: num bytes to concat
  *
- * REturn: pntr to result str
+ * Return: pntr to result str
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
