@@ -40,7 +40,7 @@ int op_mul(int a, int b)
 }
 
 /**
- * op_div - divide 2 ints 
+ * op_div - divide 2 ints
  * @a: int 1
  * @b: int 2
  *
