@@ -31,13 +31,13 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	if ((op == '/' || op == '%') && int2 == 0)
+	if ((operator = '/' || operator == '%') && int2 == 0)
 	{
 		printf("Error\n");
 		exit(100);
 	}
 
-	answer = func(int1, int2);
+	answer = op(int1, int2);
 
 	printf("%d\n", answer);
 
