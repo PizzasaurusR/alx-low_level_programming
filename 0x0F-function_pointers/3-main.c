@@ -11,7 +11,7 @@
 int main(int argc, char *argv[])
 {
 	int int1, int2, answer;
-	char *operator;
+	char operator;
 	int (*op)(int, int);
 
 	if (argc != 4)
@@ -25,13 +25,13 @@ int main(int argc, char *argv[])
 	operator = argv[2];
 	op = get_op_func(argv[2]);
 
-	if (!func)
+	if (!op)
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
-	if ((op == '/' || op == '%') && int2 == 0)
+	if ((op = '/' || op = '%') && int2 == 0)
 	{
 		printf("Error\n");
 		exit(100);
